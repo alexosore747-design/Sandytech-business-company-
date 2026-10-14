@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#176b45">
+<title>Mama Bonga | Fresh Market, Eldoret</title>
+<meta name="description" content="Fresh vegetables, convenient delivery and boda boda requests in Eldoret, Kenya.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Mama Bonga home">
+    <span class="brand-mark">🥬</span><span><strong>MAMA BONGA</strong><small>FRESH MARKET · ELDORET</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  <nav id="nav"><a href="#shop">Shop</a><a href="#how">How it works</a><a href="#ads">Adverts</a><a href="#contact">Contact</a><a class="nav-cta" href="#order">Order now</a></nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="eyebrow">FRESH FROM THE MARKET</span>
+    <h1>Your daily greens.<br><em>Delivered fresh.</em></h1>
+    <p>Shop vegetables and fresh produce with friendly service across Eldoret, Kenya.</p>
+    <div class="hero-actions"><a class="button primary" href="#order">Order vegetables <span>↗</span></a><a class="button light" href="#shop">Explore produce</a></div>
+    <div class="trust-row"><span>✓ Fresh produce</span><span>✓ Easy WhatsApp orders</span><span>✓ Local delivery</span></div>
+  </div>
+  <div class="hero-image" role="img" aria-label="Fresh vegetables in a market basket">
+    <div class="floating-note"><span>🥕</span><div><strong>Fresh choices</strong><small>Picked for your kitchen</small></div></div>
+  </div>
+</section>
+
+<section class="section shop-section" id="shop">
+  <div class="section-heading"><div><span class="eyebrow">GOOD FOOD STARTS HERE</span><h2>Market favourites</h2></div><p>Ask us for today's price and availability.</p></div>
+  <div class="product-grid">
+    <article class="product"><div class="product-photo tomatoes"><span>POPULAR</span></div><div class="product-info"><h3>Fresh tomatoes</h3><p>For stews, salads and sauces</p><button class="text-button choose" data-product="Tomatoes">Add to order <b>＋</b></button></div></article>
+    <article class="product"><div class="product-photo greens"></div><div class="product-info"><h3>Sukuma wiki</h3><p>Fresh leafy greens</p><button class="text-button choose" data-product="Sukuma wiki">Add to order <b>＋</b></button></div></article>
+    <article class="product"><div class="product-photo onions"></div><div class="product-info"><h3>Onions</h3><p>A kitchen essential</p><button class="text-button choose" data-product="Onions">Add to order <b>＋</b></button></div></article>
+    <article class="product"><div class="product-photo potatoes"></div><div class="product-info"><h3>Potatoes</h3><p>For everyday family meals</p><button class="text-button choose" data-product="Potatoes">Add to order <b>＋</b></button></div></article>
+    <article class="product"><div class="product-photo cabbages"></div><div class="product-info"><h3>Cabbages</h3><p>Crunchy and versatile</p><button class="text-button choose" data-product="Cabbages">Add to order <b>＋</b></button></div></article>
+    <article class="product"><div class="product-photo carrots"></div><div class="product-info"><h3>Carrots & more</h3><p>Ask about seasonal produce</p><button class="text-button choose" data-product="Carrots and other produce">Add to order <b>＋</b></button></div></article>
+  </div>
+</section>
+
+<section class="order-band" id="order"><div><span class="eyebrow">LET'S GET YOUR ORDER READY</span><h2>What can we bring you?</h2><p>Fill in your request. WhatsApp opens with your order details ready to send.</p></div>
+<form id="vegetableForm" class="order-form">
+  <label>Your name<input name="name" autocomplete="name" required placeholder="e.g. Alex"></label>
+  <label>Phone number<input name="phone" inputmode="tel" autocomplete="tel" required placeholder="07xx xxx xxx"></label>
+  <label>What would you like?<textarea name="items" id="items" required rows="3" placeholder="Tomatoes 2 kg, onions 1 kg..."></textarea></label>
+  <label>Delivery location<input name="location" required placeholder="Estate / landmark in Eldoret"></label>
+  <label>Preferred delivery time<select name="time"><option>As soon as available</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label>
+  <button class="button primary full" type="submit">Send vegetable order on WhatsApp ↗</button>
+  <p class="form-note">Prices and delivery charges are confirmed with you before you agree to the order.</p>
+</form></section>
+
+<section class="section service-grid" id="how">
+  <article class="service-card"><div class="service-icon">🛵</div><span class="eyebrow">NEED A RIDE?</span><h2>Request a boda boda</h2><p>Tell us your pickup point and destination. We'll help coordinate your request.</p><form id="bodaForm" class="compact-form"><label>Your name<input name="name" required placeholder="Your name"></label><label>Phone number<input name="phone" required inputmode="tel" placeholder="07xx xxx xxx"></label><label>Pickup point<input name="pickup" required placeholder="Where should the rider meet you?"></label><label>Destination<input name="destination" required placeholder="Where are you going?"></label><button class="button dark full" type="submit">Request boda boda ↗</button></form></article>
+  <article class="service-card green-card"><div class="service-icon">💬</div><span class="eyebrow">PERSONAL SERVICE</span><h2>Talk to Mama Bonga</h2><p>Have a question about produce, prices or delivery? Send us a WhatsApp message and we will confirm the details.</p><a class="button white full" id="generalWhatsApp" href="#">Chat on WhatsApp ↗</a><div class="mini-details"><span>📍 Eldoret, Kenya</span><span>🥬 Fresh produce, local service</span></div></article>
+</section>
+
+<section class="section ads-section" id="ads">
+  <div class="section-heading"><div><span class="eyebrow">FROM OUR COMMUNITY</span><h2>Featured videos & adverts</h2></div><p>Watch Mama Bonga updates and local business adverts.</p></div>
+  <div class="ad-grid">
+    <article class="ad-card"><div class="video-wrap"><video controls playsinline preload="metadata" poster="assets/ad-poster.svg">Your browser does not support video. Add your own MP4 file named assets/mama-bonga-ad.mp4 and uncomment the source in index.html.</video><span class="ad-label">MAMA BONGA</span></div><div class="ad-copy"><h3>Meet Mama Bonga</h3><p>Add your own short promotional video here.</p></div></article>
+    <article class="ad-card"><div class="video-wrap placeholder-video"><span>▶</span><p>LOCAL BUSINESS SPOTLIGHT</p></div><div class="ad-copy"><h3>Advertise with us</h3><p>Local businesses can contact us to discuss paid advert placement.</p><a href="#" id="advertWhatsApp" class="inline-link">Ask about advertising ↗</a></div></article>
+  </div>
+  <p class="ad-disclaimer">Only publish adverts you have permission to use. Paid advert arrangements are handled directly with Mama Bonga.</p>
+</section>
+
+<section class="contact-strip" id="contact"><div><span class="eyebrow">HERE FOR YOUR HOUSEHOLD</span><h2>Fresh market, friendly service.</h2><p>Serving Eldoret, Kenya. Confirm current prices and delivery charges before ordering.</p></div><a class="button white" id="contactWhatsApp" href="#">Contact us on WhatsApp ↗</a></section>
+</main>
+<footer><a class="brand footer-brand" href="#home"><span class="brand-mark">🥬</span><span><strong>MAMA BONGA</strong><small>FRESH MARKET · ELDORET</small></span></a><p>Fresh produce. Reliable service. Happy customers.</p><small>© <span id="year"></span> Mama Bonga. All rights reserved.</small><a class="owner-link" href="owner.html">Owner sign in</a></footer>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
